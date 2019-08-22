@@ -17,3 +17,4 @@ class Config(object):
     LOG_TO_STDOUT = int(os.environ.get('LOG_TO_STDOUT') or 0)
     POSTS_PER_PAGE = 3
     LANGUAGES = ["en", "es", "ru"]
+    YANDEX_TRANSLATOR_KEY = os.environ.get('YANDEX_TRANSLATOR_KEY')
