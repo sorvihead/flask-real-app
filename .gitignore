@@ -1,6 +1,13 @@
 .idea
 venv
 __pycache__
-app/pycache
+app/__pycache__
+auth/__pycache__
+errors/__pycache__
+main/__pycache__
 logs
-app.db
+.vscode
+.mypy_cache
+
+/app.db
+.env

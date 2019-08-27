@@ -1,7 +1,9 @@
+from dotenv import load_dotenv
 import os
 
 
 basedir = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(basedir, '.env'))
 
 
 class Config(object):
@@ -18,3 +20,8 @@ class Config(object):
     POSTS_PER_PAGE = 3
     LANGUAGES = ["en", "es", "ru"]
     YANDEX_TRANSLATOR_KEY = os.environ.get('YANDEX_TRANSLATOR_KEY')
+
+
+class TestConfig(Config):
+    TESTING = True
+    SQLALCHEMY_DATABASE_URI = 'sqlite://'
