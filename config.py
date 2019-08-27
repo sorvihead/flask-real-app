@@ -20,6 +20,7 @@ class Config(object):
     POSTS_PER_PAGE = 3
     LANGUAGES = ["en", "es", "ru"]
     YANDEX_TRANSLATOR_KEY = os.environ.get('YANDEX_TRANSLATOR_KEY')
+    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
 
 
 class TestConfig(Config):
